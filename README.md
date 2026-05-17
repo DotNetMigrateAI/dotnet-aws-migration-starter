@@ -48,8 +48,8 @@ Click **"Use this template"** → **"Create a new repository"** on GitHub.
 
 ### 2. Clone & Setup
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME
-cd YOUR_REPO_NAME
+git clone https://github.com/DotNetMigrateAI/dotnet-aws-migration-starter
+cd dotnet-aws-migration-starter
 cp .env.example .env
 # Fill in your AWS details in .env
 ```
