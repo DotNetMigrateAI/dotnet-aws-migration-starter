@@ -1,0 +1,60 @@
+{
+  "transformSettings": {
+    "version": "1.0",
+    "description": "AWS Transform for .NET — Migration Configuration",
+    "targetRuntime": "dotnet8",
+    "targetPlatform": "linux-x64",
+    "containerize": true,
+
+    "sourceSettings": {
+      "solutionPath": "../../src/SampleApp",
+      "projectType": "WebAPI",
+      "sourceFramework": "net48"
+    },
+
+    "targetSettings": {
+      "outputPath": "../../src/SampleApp-migrated",
+      "generateDockerfile": true,
+      "generateCICDPipeline": true
+    },
+
+    "analysisSettings": {
+      "scanDependencies": true,
+      "checkCompatibility": true,
+      "generateReport": true,
+      "reportPath": "../../docs/transform-report.html"
+    },
+
+    "replacementRules": {
+      "namespaceReplacements": [
+        {
+          "old": "System.Web",
+          "new": "Microsoft.AspNetCore"
+        },
+        {
+          "old": "System.Web.Http",
+          "new": "Microsoft.AspNetCore.Mvc"
+        }
+      ],
+      "packageReplacements": [
+        {
+          "old": "EntityFramework",
+          "new": "Microsoft.EntityFrameworkCore",
+          "version": "8.0.0"
+        },
+        {
+          "old": "Newtonsoft.Json",
+          "new": "System.Text.Json",
+          "notes": "Consider keeping Newtonsoft if complex serialization needed"
+        }
+      ]
+    },
+
+    "awsServices": {
+      "useSecretsManager": true,
+      "useParameterStore": true,
+      "useCloudWatch": true,
+      "targetService": "ECS_FARGATE"
+    }
+  }
+}

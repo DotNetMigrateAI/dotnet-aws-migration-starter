@@ -1,0 +1,32 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.swp
+TestResults/
+
+# Environment
+.env
+*.env.local
+
+# AWS CDK
+infra/cdk/node_modules/
+infra/cdk/cdk.out/
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/settings.json
+*.code-workspace
+
+# AWS Transform output
+docs/transform-report.html
+transform/output/
