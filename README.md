@@ -1,6 +1,6 @@
 # 🚀 .NET to AWS Migration Starter Kit
 
-> Built by [Hitesh](https://twitter.com/) | [MigrateWithAI](https://youtube.com/) | Part of the **MigrateAI** ecosystem
+> Built by [MigrateWithAI](https://x.com/migratewithai/) | Part of the **MigrateAI** ecosystem
 
 A production-ready starter template for migrating legacy .NET applications to AWS using **AWS Transform for .NET** and modern AWS services (ECS, Lambda, API Gateway, CDK).
 
@@ -115,9 +115,9 @@ Internet → ALB → ECS Fargate (.NET 8)
 
 This template is part of the **MigrateAI Cohort Program** — a hands-on training for engineers migrating legacy .NET apps to AWS.
 
-- 🐦 Follow on X: [@YourHandle](https://twitter.com/)
-- 📺 YouTube: [MigrateWithAI](https://youtube.com/)
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/)
+- 🐦 Follow on X: [@MigrateWithAI](https://x.com/migratewithai/)
+- 📺 YouTube: [MigrateWithAI](https://youtube.com/migratewithai)
+- 💼 LinkedIn: [Hitesh Kumar](https://www.linkedin.com/in/hiteshsinghtarkar)
 
 ---
 
